@@ -42,12 +42,18 @@ public class ImagenSuperacionActivity extends AppCompatActivity {
         if (gender.equals("Men")) {
 
             int index = random.nextInt(imagesMen.length+1);
+            if (index == 5){
+                index = 4;
+            }
             Context context = superationImage.getContext();
             id = context.getResources().getIdentifier(imagesMen[index], "drawable", context.getPackageName());
 
         } else if (gender.equals("Women")) {
 
             int index = random.nextInt(imagesWomen.length+1);
+            if (index == 5){
+                index = 4;
+            }
             Context context = superationImage.getContext();
             id = context.getResources().getIdentifier(imagesWomen[index], "drawable", context.getPackageName());
 

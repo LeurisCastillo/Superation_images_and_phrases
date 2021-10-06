@@ -10,14 +10,45 @@
         android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"/>
+        android:layout_toLeftOf="@id/txt_gender"
+        android:layout_marginEnd="5dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:text="ejemplo"/>
 
     <TextView
         android:id="@+id/txt_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:text="ejemplo"/>
+
+    <TextView
+        android:id="@+id/superation_phrase"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
         android:layout_centerInParent="true"
-        android:layout_below="@id/txt_name"
-        android:textSize="20sp"/>
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="superacion"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_200"
+        app:cornerRadius="999dp"
+        app:icon="@drawable/ic_exit"
+        app:iconGravity="textStart"/>
 </RelativeLayout>
