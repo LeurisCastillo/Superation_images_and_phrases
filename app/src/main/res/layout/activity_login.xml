@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_ic_person"
+        android:drawablePadding="12dp"
+        android:hint="Name"
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_name"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men" />
+
+        <RadioButton
+            android:id="@+id/rb_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_overcoming_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:padding="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:text="Images"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_overcoming_phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:padding="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_overcoming_images"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:text="Phrases"/>
+</RelativeLayout>
