@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImagenSuperacionActivity">
+    tools:context=".ImagenSuperacionActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/txt_gender"
         android:layout_marginEnd="5dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
+        android:layout_toLeftOf="@id/txt_gender"
         android:fontFamily="monospace"
-        android:text="ejemplo"/>
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/txt_gender"
@@ -23,19 +24,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="5dp"
-        android:textSize="16sp"
-        android:textStyle="italic"
         android:fontFamily="monospace"
-        android:text="ejemplo"/>
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/superation_phrase"
         android:layout_width="400dp"
         android:layout_height="300dp"
         android:layout_centerInParent="true"
-        android:textAlignment="center"
         android:gravity="center"
-        android:text="superacion"/>
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btn_exit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
+        app:cornerRadius="999dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="textStart" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_exit"

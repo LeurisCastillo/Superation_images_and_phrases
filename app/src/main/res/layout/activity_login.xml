@@ -4,20 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@color/white">
 
     <EditText
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_ic_person"
         android:drawablePadding="12dp"
         android:hint="Name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:padding="10dp" />
 
     <RadioGroup
@@ -32,13 +37,15 @@
             android:id="@+id/rb_men"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Men" />
+            android:text="Men"
+            android:textColor="@color/black"/>
 
         <RadioButton
             android:id="@+id/rb_women"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Women"/>
+            android:text="Women"
+            android:textColor="@color/black"/>
     </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -60,16 +67,17 @@
         android:id="@+id/btn_overcoming_phrases"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:padding="13dp"
-        android:layout_centerInParent="true"
         android:layout_below="@+id/btn_overcoming_images"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/custom_button"
-        android:textSize="15sp"
+        android:padding="13dp"
+        android:text="Phrases"
         android:textAllCaps="false"
-        android:text="Phrases"/>
+        android:textSize="15sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_exit"
@@ -84,5 +92,5 @@
         android:backgroundTint="@color/teal_200"
         app:cornerRadius="999dp"
         app:icon="@drawable/ic_exit"
-        app:iconGravity="textStart"/>
+        app:iconGravity="textStart" />
 </RelativeLayout>

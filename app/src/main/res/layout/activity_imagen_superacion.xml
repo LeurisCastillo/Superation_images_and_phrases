@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImagenSuperacionActivity">
+    tools:context=".ImagenSuperacionActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/txt_name"
@@ -15,7 +16,7 @@
         android:textSize="16sp"
         android:textStyle="italic"
         android:fontFamily="monospace"
-        android:text="ejemplo"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/txt_gender"
@@ -26,7 +27,7 @@
         android:textSize="16sp"
         android:textStyle="italic"
         android:fontFamily="monospace"
-        android:text="ejemplo"/>
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/superation_image"
@@ -35,17 +36,31 @@
         android:layout_centerInParent="true" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btn_exit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
+        app:cornerRadius="999dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/teal_200"
         app:cornerRadius="999dp"
         app:icon="@drawable/ic_exit"
-        app:iconGravity="textStart"/>
+        app:iconGravity="textStart" />
 </RelativeLayout>
